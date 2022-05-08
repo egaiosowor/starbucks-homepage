@@ -480,15 +480,13 @@ footer{
     cursor: pointer;
 }
 
-.accordion__item .header::after{
-    content: url(/images/angle-down.svg);
-    position: relative;
+.accordion__item .header svg{
     display: block;
-    height: 32px;
+    height: 20px;
     transition: 300ms ease-in-out;
 }
 
-.accordion__item .rotate.header::after{
+.accordion__item .rotate.header svg{
     transform: rotate(180deg);
 }
 
