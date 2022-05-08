@@ -203,12 +203,14 @@ hr{
     content: url(/images/angle-left.svg);
     position: absolute;
     left: 20vw;
+    height: 32px;
 }
 
 #menu__btn::after{
     content: url(/images/angle-right.svg);
     display: grid;
     border: none;
+    height: 32px;
 }
 
 #menu .divider{
@@ -484,8 +486,9 @@ footer{
 
 .accordion__item .header::after{
     content: url(/images/angle-down.svg);
-    display: block;
     position: relative;
+    display: block;
+    height: 32px;
     transition: 300ms ease-in-out;
 }
 
