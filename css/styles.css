@@ -175,16 +175,14 @@ hr{
 
 .menu__links a,
 #menu__btn,
-#menu-secondary a,
-#secondaryMenuBtn{
+#menu-secondary a{
     display: block;
     font-size: 1.1875rem;
     color: black;
     padding: 15px 25px;
 }
 
-#menu__btn,
-#secondaryMenuBtn{
+#menu__btn{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -193,20 +191,25 @@ hr{
     border: none;
 }
 
-#secondaryMenuBtn{
-    position: relative;
-    justify-content: center;
-    background-color: #f9f9f9;
-}
-
-#secondaryMenuBtn svg{
-    position: absolute;
-    left: 20vw;
-}
-
 #menu__btn{
     display: flex;
     align-items: center;
+}
+
+#secondaryMenuBtn{
+    width: 100%;
+    background-color: #f9f9f9;
+    border: none;
+}
+
+.random{
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0 15px 17px;
+    font-size: 1.1875rem;
+    color: black;
 }
 
 #menu .divider{
@@ -329,11 +332,11 @@ hr{
     margin-left: 10px;
 }
 
-.nav-right .btn-group .btn-default:hover{
+.btn-group .btn-default:hover{
     background-color: rgb(73, 72, 72); 
 }
 
-.nav-right .btn-group .btn-dark-outline:hover{
+.btn-group .btn-dark-outline:hover{
     background-color: rgb(231, 228, 228);
 }
 
@@ -470,7 +473,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 25px;
+    padding: 20px 25px;
     width: 100%;
     font-size: 1.125rem;
     font-weight: 500;
@@ -493,7 +496,6 @@ footer{
 @media (min-width: 800px){
     .accordion__item{
         padding: 0 40px;
-        margin-bottom: 30px;
     }
 }
 
