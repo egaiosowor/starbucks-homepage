@@ -50,27 +50,39 @@ hr{
 .btn{
     display: inline-block;
     padding: 0.625rem 1.0625rem;
-    color: #fff;
-    background-color: #000;
     border: 1px solid;
     border-radius: 32px;
     transition: 100ms ease-in-out;
 }
 
-.btn-default{
+.btn-solid{
+    color: #fff;
     background-color: #000;
 }
 
 .btn-light-outline{
     color: #fff;
     border-color: #fff;
-    background-color: transparent;
 }
 
 .btn-dark-outline{
     color: #000;
     border-color: #000;
-    background-color: transparent;
+}
+
+.btn-green-outline{
+    color: #1e3932;
+    border-color: #1e3932;
+}
+
+.btn-solid:hover{
+    background-color: rgb(0, 0, 0, 0.7);
+}
+
+.btn-dark-outline:hover,
+.btn-green-outline:hover,
+.btn-light-outline:hover{
+    background-color: rgb(0, 0, 0, 0.2);
 }
 
 
@@ -328,16 +340,12 @@ hr{
     font-weight: 700;
 }
 
-.nav-right .btn-group .btn-default{
+.nav-right .btn-group .btn-solid{
     margin-left: 10px;
 }
 
-.btn-group .btn-default:hover{
-    background-color: rgb(73, 72, 72); 
-}
-
-.btn-group .btn-dark-outline:hover{
-    background-color: rgb(231, 228, 228);
+.nav-right .btn-group .btn-dark-outline:hover{
+    background-color: rgb(0, 0, 0, 0.1);
 }
 
 
@@ -370,27 +378,33 @@ hr{
     order: 2;
     padding: 32px 20px;
     text-align: center;
+    color: #ffff;
 }
 
 .box__text p span{
     font-weight: 700;
-    color: #0d241e;
+    background-color: #0d241e;
+}
+
+.box-1-bg{
+    background-color: #006241;
+}
+
+.box-2-bg{
+    background-color: #b04a5a;
+}
+
+.box-3-bg,
+.box-5-bg{
+    background-color: #1e3932;
+}
+
+.box-4-bg{
+    background-color: #d69a2d;
 }
 
 .clr-light-green{
     color: #1e3932;
-}
-
-.box__text .btn{
-    transition: 100ms ease-in-out;
-}
-
-.box__text .btn-dark-outline:hover{
-    background-color: rgb(73, 72, 72, 0.1);
-}
-
-.box__text .btn-light-outline:hover{
-    background-color: rgb(73, 72, 72, 0.6);
 }
 
 
