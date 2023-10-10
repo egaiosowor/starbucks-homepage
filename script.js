@@ -3,6 +3,7 @@ const slideMenu = document.getElementById("menu");
 const mobileMenuBtn = document.getElementById("menu__btn");
 const secondaryMenu = document.getElementById("menu-secondary");
 const secondaryMenuBtn = document.getElementById("secondaryMenuBtn");
+const copyYear = document.getElementById("copyYear")
 
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("is-toggled");
@@ -36,3 +37,8 @@ for(i = 0; i < accordionItem.length; i++){
     
 };
 
+//Copy Year
+const currentDate = new Date();
+const currentYear = currentDate.getFullYear();
+
+copyYear.innerHTML = currentYear;
